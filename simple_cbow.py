@@ -45,6 +45,7 @@ class SimpleCBOW:
         loss = self.loss_layer.forward(score, target)
         return loss
     
+    
     #Backward Wave of this NN
     def backward(self, dout=1):
         ds = self.loss_layer.backward(dout)
